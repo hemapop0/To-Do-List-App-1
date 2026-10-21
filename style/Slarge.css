@@ -1,0 +1,230 @@
+/* ==================
+    reset
+====================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #0B1422;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+
+/* ==================
+    Header & Logo
+====================*/
+#con__sec01{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+#sec01__header img{
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+}
+
+#sec01__header h1{
+    font-size: 36px;
+    letter-spacing: 0.5px;
+}
+
+#sec01__header p {
+    color: #a8b7c9;
+}
+/* ==================
+    Glass Cards
+====================*/
+
+#con__sec02,
+#con__sec03 {
+    padding: 30px;
+    margin-bottom: 24px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+#inp__but{
+    width: 100%;
+    min-height: 40px;
+    padding: 12px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 10px;
+    background: #10b981bd;
+    color: #f8fafc;
+    cursor: pointer;
+}
+
+#sec02__form__title, 
+#sec03__form__title{
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+#con__sec02{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form__item{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.form__item label,
+#search label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #f8fafc;
+}
+
+
+.form__item input,
+#search input {
+    width: 100%;
+    min-height: 44px;
+    padding: 12px 15px;
+    background: rgba(11, 20, 34, 0.35);
+    color: #f8fafc;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.form__item input:focus,
+#search input:focus {
+    border-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+}
+
+.form__item input::placeholder,
+#search input::placeholder {
+    color: rgba(248, 250, 252, 0.5);
+}
+
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.date__input{
+    background: rgba(255, 255, 255, 0.07);
+}
+*::placeholder{
+    color: #f8fafc5b;
+}
+
+/* ==================
+    section 3
+====================*/
+
+#sec03__form__title{
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+#search{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+#search input {
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 10px;
+    color: #f8fafc;
+    transition:  border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.task__filter{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+.task__filter button{
+    width: 100%;
+    min-height: 40px;
+    padding: 12px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 10px;
+    background: #0b14223b;
+    color: #f8fafc;
+    cursor: pointer;
+}
+#sec03__form__title{
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+.delete-btn{
+     background: #ff4d4f;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 3px 3px 8px 0;
+    transition: background 0.3s ease;
+    box-shadow: 0 0 0 3px rgba(255, 77, 79, 0.15);
+}
+
+.delete-btn:hover {
+    background: #e03133;
+}
+
+
+.complete-btn{
+    background: #10b981;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 3px 0 8px 3px;
+    transition: background 0.3s ease;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+}
+.complete-btn:hover {
+    background: #059669;
+}

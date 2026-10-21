@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do-List-App</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <main id="container">
+      <section id="con__sec01">
+        <header id="sec01__header">
+          <img src="image/LOGO-FIN.png" alt="To-DO-List LOGO" />
+          <h1>My Tasks</h1>
+          <p>Organize your daily tasks</p>
+        </header>
+      </section>
+      <section id="con__sec02">
+        <form id="sec02__form">
+          <h3 id="sec02__form__title">Add a new tasks</h3>
+
+          <div class="form__item">
+            <label for="Title__task">Task title:</label>
+            <input
+              class="date__input"
+              type="text"
+              id="Title__task"
+              name="task"
+              placeholder="Enter your task"
+              required
+            />
+          </div>
+          <div class="form__item">
+            <label for="Title__des">Description:</label>
+            <input
+              class="date__input"
+              type="text"
+              id="Title__des"
+              name="Description"
+              placeholder="Enter your description"
+            />
+          </div>
+
+          <div class="form__item">
+            <label for="Title__date">Due Date:</label>
+            <input
+              class="date__input"
+              type="date"
+              id="Title__date"
+              name="date"
+              placeholder="Choose date"
+            />
+          </div>
+          <input type="submit" value="Add Task" id="inp__but"/>
+        </form>
+      </section>
+      <section id="con__sec03">
+        <h3 id="sec03__form__title">My tasks</h3>
+        <div id="search">
+          <label for="search__input">Search tasks:</label>
+          <input
+            class="search__input"
+            id="search__input"
+            type="search"
+            placeholder="Search by task title or id...."
+          />
+        </div>
+        <div class="task__filter" aria-label="task filter">
+          <button class="filter-btn" type="button" data-filter="all">
+            All
+          </button>
+          <button class="filter-btn" type="button" data-filter="pending">
+            Pending
+          </button>
+          <button class="filter-btn" type="button" data-filter="completed">
+            Completed
+          </button>
+        </div>
+        <div id="task__list"></div>
+        <p id="empty-message">No tasks yet. Add your first task!</p>
+      </section>
+    </main>
+
+    <script src="script/sc.js"></script>
+  </body>
+</html>

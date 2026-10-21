@@ -1,0 +1,25 @@
+@media (max-width: 900px){
+    body {
+        padding: 16px;
+    }
+
+    #sec01__header img {
+        width: 90px;
+        height: 90px;
+    }
+
+    #sec01__header h1 {
+        font-size: 30px;
+    }
+
+    #con__sec02,
+    #con__sec03 {
+        padding: 24px;
+    }
+
+    #sec02__form__title,
+    #sec03__form__title {
+        font-size: 21px;
+    }
+
+}

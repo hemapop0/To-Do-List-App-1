@@ -1,0 +1,56 @@
+@media (max-width: 600px){
+        body {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    #con__sec01 {
+        margin-bottom: 20px;
+    }
+
+    #sec01__header img {
+        width: 75px;
+        height: 75px;
+    }
+
+    #sec01__header h1 {
+        font-size: 26px;
+    }
+
+    #sec01__header p {
+        font-size: 13px;
+    }
+
+    #con__sec02,
+    #con__sec03 {
+        padding: 18px;
+        border-radius: 16px;
+    }
+
+    #sec02__form__title,
+    #sec03__form__title {
+        font-size: 19px;
+        margin-bottom: 18px;
+    }
+
+    .form__item {
+        margin-bottom: 16px;
+    }
+
+    .form__item input,
+    #search input {
+        min-height: 44px;
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .task__filter {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .task__filter button {
+        min-height: 42px;
+        padding: 10px;
+    }
+}
